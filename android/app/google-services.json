@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "594641433324",
+    "firebase_url": "https://flutter-climate.firebaseio.com",
+    "project_id": "flutter-climate",
+    "storage_bucket": "flutter-climate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594641433324:android:e7c39a091a224b693cabc9",
+        "android_client_info": {
+          "package_name": "com.example.hackocracy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "594641433324-n0fhu9nigmqicafg1bgp8q11739sfcla.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAX2H_Xm4SflhzD2AFGY5A5iqIdgu5EIsA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "594641433324-n0fhu9nigmqicafg1bgp8q11739sfcla.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,5 +1,5 @@
 import 'package:hackocracy/login_screen.dart';
-import 'package:hackocracy/registration_screen.dart';
+//import 'package:hackocracy/registration_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:hackocracy/roundedbutton.dart';
 
@@ -38,20 +38,11 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               height: 48.0,
             ),
             RoundedButton(
-              title: 'LOGIN',
+              title: 'Lets Go!!',
               colur: Color(0xFF1CE3B1),
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
                   return LoginScreen();
-                }));
-              },
-            ),
-            RoundedButton(
-              title: 'REGISTER',
-              colur: Colors.lightBlueAccent,
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return RegistrationScreen();
                 }));
               },
             ),

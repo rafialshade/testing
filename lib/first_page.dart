@@ -2,8 +2,6 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-const String url = 'http://ip/CleanGoa/getData.php';
-
 class FirstPage extends StatefulWidget {
   const FirstPage({Key key}) : super(key: key);
 
@@ -12,10 +10,7 @@ class FirstPage extends StatefulWidget {
 }
 
 class _FirstPageState extends State<FirstPage> {
-  Future<List> getData() async {
-    final responce = await http.get(url);
-    return jsonDecode(responce.body);
-  }
+  Future<List> getData() async {}
 
   @override
   Widget build(BuildContext context) {
@@ -48,17 +43,16 @@ class Docs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      
       itemCount: list == null ? 0 : list.length,
       itemBuilder: (context, i) {
         return Container(
-        //  color: Colors.black54,
+          //  color: Colors.black54,
           child: Card(
               color: Colors.white,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15.0),
               ),
-             // elevation: 6.0,
+              // elevation: 6.0,
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Column(
@@ -73,28 +67,29 @@ class Docs extends StatelessWidget {
                     SizedBox(
                       height: 10.0,
                     ),
-                    Text(list[i]['description'],style: TextStyle(
-                      color: Colors.black54,
-                      fontWeight: FontWeight.w500,
-                      fontFamily: 'Montserrat' 
-                    ),
+                    Text(
+                      list[i]['description'],
+                      style: TextStyle(
+                          color: Colors.black54,
+                          fontWeight: FontWeight.w500,
+                          fontFamily: 'Montserrat'),
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: <Widget>[
                         SizedBox(
-                          
                           height: 20.0,
-                          child: Icon(Icons.favorite_border,color: Colors.redAccent,),
+                          child: Icon(
+                            Icons.favorite_border,
+                            color: Colors.redAccent,
+                          ),
                         ),
                       ],
                     )
                   ],
                 ),
-                
-              )
-              ),
-         // margin: EdgeInsets.all(5.0),
+              )),
+          // margin: EdgeInsets.all(5.0),
         );
       },
     );
